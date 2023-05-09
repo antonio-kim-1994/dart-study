@@ -4,7 +4,8 @@ void main(){
     '블랙핑크',
     ['지수', '제니', '리사', '로제']
   );
-
+  
+  print('--------------------------');
   print(blackPink.name);
   print(blackPink.members);
   blackPink.sayHello();
@@ -16,6 +17,7 @@ void main(){
     ['RM', '진', '슈가', '제이홉', '지민', '뷔', '정국']
   );
 
+  print('--------------------------');
   print(bts.name);
   print(bts.members);
   bts.sayHello();
@@ -29,6 +31,7 @@ void main(){
     ]
   );
   
+  print('--------------------------');
   print(test.name);
   print(test.members);
   test.sayHello();
@@ -41,14 +44,16 @@ void main(){
 /// sayHello (인사) - 함수
 /// introduce (멤버) - 함수
 class Idol {
-  String name;
-  List<String> members;
+  // Class에서 선언하는 변수들은 가급적 final로 선언하여 인스턴스의 값이 선언 후 변경되지 않게 하는 것을 권장
+  final String name;
+  final List<String> members;
 
   // constructor
   // Idol(String name, List<String> members)
   //   : this.name = name,
   //     this.members = members;
   // Basic Constructor
+  // const Constructor로도 선언 가능하다 : const Idol(this.name, this.members);
   Idol(this.name, this.members);
 
   // Named Constructor
