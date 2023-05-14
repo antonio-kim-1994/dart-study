@@ -21,6 +21,7 @@ void main(){
   print(people);
 
   // where : Filtering에서 사용한다.
+  // 많이 사용하는 기능
   final blackPink = people.where((e) => e['group'] == '블랙핑크');
   print(blackPink);
 
