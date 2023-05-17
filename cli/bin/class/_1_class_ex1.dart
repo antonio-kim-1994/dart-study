@@ -57,6 +57,7 @@ class Idol {
   Idol(this.name, this.members);
 
   // Named Constructor
+  // constructor.<String>(List values)
   Idol.fromList(List values)
     : members = values[0],
       name = values[1];
